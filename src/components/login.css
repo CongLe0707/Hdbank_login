@@ -1,0 +1,57 @@
+/* Logo mặc định */
+.logo-custom {
+  /* giữ nguyên width, height tự động */
+  width: auto;
+  height: auto;
+}
+
+/* Mặc định khoảng cách giữa logo và form (ở portrait) */
+.login-form {
+  margin-top: 4rem; /* khoảng cách mặc định */
+}
+
+/* Chỉnh lại margin để form gần logo hơn ở điện thoại đứng (max-width 640px) */
+@media (max-width: 640px) and (orientation: portrait) {
+  .login-form {
+    margin-top: 1.5rem; /* giảm khoảng cách để gần logo hơn */
+  }
+}
+
+/* Ở landscape điện thoại, để logo không đè lên form */
+@media (max-width: 640px) and (orientation: landscape) {
+  .logo-custom {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    width: 5rem !important; /* thu nhỏ logo */
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    z-index: 100;
+  }
+
+  .login-form {
+    margin-top: 0 !important; /* bỏ margin trên */
+    margin-left: 6rem; /* tạo khoảng cách trái đủ để không đè lên logo */
+    max-width: calc(100% - 6rem); /* tránh rộng quá */
+    position: relative;
+    z-index: 10;
+  }
+}
+
+/* Desktop và các màn hình lớn giữ nguyên */
+@media (min-width: 641px) {
+  .logo-custom {
+    position: fixed;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 12rem; /* hoặc kích thước bạn muốn */
+    z-index: 50;
+  }
+
+  .login-form {
+    margin-top: 4rem;
+    margin-left: 0;
+    max-width: 28rem; /* ví dụ max-width desktop */
+    position: relative;
+  }
+}

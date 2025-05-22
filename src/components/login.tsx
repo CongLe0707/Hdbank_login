@@ -8,20 +8,20 @@ import './login.css';
 const Login = () => {
   return (
     <div className="min-h-screen bg-[rgb(165, 163, 163)] relative px-4">
-       {/* Logo HDBank  */}
+      {/* Logo HDBank */}
       <img
         src={logo}
         alt="HDBank Logo"
         style={{ width: "300px", height: "auto" }}
-        className="fixed top-2 left-0 w-24 sm:w-32 lg:w-48 z-50 -mt-12 -ml-8"
+        className="fixed top-2 left-0 w-24 sm:w-32 lg:w-48 z-50 -mt-12 -ml-8 logo-custom"
       />
 
       {/* Căn giữa toàn bộ */}
       <div className="flex items-center justify-center min-h-screen px-4">
-        <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl gap-4">
+        <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-4">
 
           {/* Ảnh minh họa */}
-          <div className="hidden md:flex w-[200%] justify-end pr-10 -ml-8">
+          <div className="hidden md:flex w-[60%] justify-end pr-10 -ml-8">
             <img
               src={br}
               alt="Illustration"
@@ -30,7 +30,7 @@ const Login = () => {
           </div>
 
           {/* Form đăng nhập */}
-          <div className="w-full max-w-md  py-7 px-6 rounded-xl shadow-md relative z-10 text-white bg-[#DD0000] ">
+          <div className="w-full max-w-sm py-7 px-6 rounded-xl shadow-md relative z-10 text-white bg-[#DD0000] login-form">
 
             {/* Tiêu đề */}
             <div className="mb- text-white">
@@ -38,15 +38,15 @@ const Login = () => {
                 Chào mừng bạn đến với
               </div>
               <div className="flex items-center justify-center">
-                <hr style={{ borderTopWidth: '2px' }} className="flex-grow border-t border-white mx-2 -mt-[9px]  " />
+                <hr style={{ borderTopWidth: '2px' }} className="flex-grow border-t border-white mx-2 -mt-[9px]" />
                 <span className="text-lg font-bold whitespace-nowrap">Tài khoản sinh lời</span>
-                <hr style={{ borderTopWidth: '2px' }}  className="flex-grow border-t border-white mx-2 -mt-[9px] " />
+                <hr style={{ borderTopWidth: '2px' }} className="flex-grow border-t border-white mx-2 -mt-[9px]" />
               </div>
             </div>
 
             {/* Form */}
-            <form  className="space-y-3">
-               {/* Form tài khoản */}
+            <form className="space-y-3">
+              {/* Form tài khoản */}
               <div>
                 <label htmlFor="username" className="block text-sm mb-1">
                   Tên đăng nhập
@@ -85,16 +85,16 @@ const Login = () => {
                   </span>
                 </div>
               </div>
-              
+
               {/* Nút nhấn đăng nhập */}
               <button
                 type="submit"
-                className="w-full bg-[#ffcb05] text-base hover:bg-yellow-400 text-black  py-2 rounded-md flex items-center justify-center gap-2">
+                className="w-full bg-[#ffcb05] text-base hover:bg-yellow-400 text-black py-2 rounded-md flex items-center justify-center gap-2">
                 {TbLogin({})}
                 Đăng Nhập
               </button>
 
-              <div className="text-right text-sm text-white font-bold cursor-pointer">
+              <div className="text-right text-sm text-white cursor-pointer">
                 Hướng Dẫn Xác Thực Vân Tay
               </div>
             </form>
