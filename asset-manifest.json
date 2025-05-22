@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Hdbank_login/static/css/main.580ae0a2.css",
+    "main.js": "/Hdbank_login/static/js/main.f00ffa5f.js",
+    "static/js/453.e9719776.chunk.js": "/Hdbank_login/static/js/453.e9719776.chunk.js",
+    "static/media/login-bg2.png": "/Hdbank_login/static/media/login-bg2.cb0e3e9d95f34bbf19d6.png",
+    "static/media/logo-hdbank.png": "/Hdbank_login/static/media/logo-hdbank.72fc54ae1ee6685e2a3f.png",
+    "index.html": "/Hdbank_login/index.html",
+    "main.580ae0a2.css.map": "/Hdbank_login/static/css/main.580ae0a2.css.map",
+    "main.f00ffa5f.js.map": "/Hdbank_login/static/js/main.f00ffa5f.js.map",
+    "453.e9719776.chunk.js.map": "/Hdbank_login/static/js/453.e9719776.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.580ae0a2.css",
+    "static/js/main.f00ffa5f.js"
+  ]
+}
