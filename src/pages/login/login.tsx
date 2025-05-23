@@ -1,13 +1,15 @@
-import logo from "../assets/images/logo-hdbank.png";
-import br from "../assets/images/login-bg2.png";
+import logo from '../../assets/images/logo-hdbank.png';
+import br from '../../assets/images/login-bg2.png';
+
 import { FaUser, FaLock } from "react-icons/fa";
 import { FiEyeOff } from "react-icons/fi";
 import { TbLogin } from "react-icons/tb";
-import './login.css';
+import '../login/login.css';
 
 const Login = () => {
   return (
-    <div className="min-h-screen bg-[rgb(165, 163, 163)] relative px-4">
+   <div className="min-h-screen bg-[#DCDCDC] relative px-4">
+
       {/* Logo HDBank */}
       <img
         src={logo}
@@ -30,7 +32,7 @@ const Login = () => {
           </div>
 
           {/* Form đăng nhập */}
-          <div className="w-full max-w-sm py-7 px-6 rounded-xl shadow-md relative z-10 text-white bg-[#DD0000] login-form">
+          <div className="w-50 max-w-sm py-7 px-6 rounded-xl shadow-md relative z-10 text-white bg-[#DD0000] login-form">
 
             {/* Tiêu đề */}
             <div className="mb- text-white">
